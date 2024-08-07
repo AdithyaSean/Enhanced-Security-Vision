@@ -8,9 +8,6 @@
   packages = [
     pkgs.python311
     pkgs.python311Packages.pip
-    pkgs.python311packages.torch
-    pkgs.python311packages.torchvision
-    pkgs.python311packages.pixellib
   ];
 
   # Sets environment variables in the workspace
