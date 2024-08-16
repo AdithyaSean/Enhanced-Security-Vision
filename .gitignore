@@ -1,3 +1,4 @@
-./original/
-./segmented/
-src/__pycache__/segment.cpython-312.pyc
+original
+segmented
+enhanced
+src/__pycache__
