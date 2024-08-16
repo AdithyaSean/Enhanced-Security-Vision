@@ -19,12 +19,11 @@ def enhance_image(image_path, output_path):
     # Convert back to BGR for sharpening
     equalized_bgr = cv2.cvtColor(equalized, cv2.COLOR_GRAY2BGR)
 
-    # Create a sharpening kernel
     kernel = np.array([[0, -1, 0],
                        [-1, 5, -1],
                        [0, -1, 0]])
-
-    # Apply the sharpening filter
+    
+    # Apply sharpening using the kernel
     sharpened = cv2.filter2D(equalized_bgr, -1, kernel)
 
     # Save the enhanced image to the specified output path

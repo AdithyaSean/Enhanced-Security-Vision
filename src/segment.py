@@ -1,12 +1,18 @@
 import os
 import cv2
 from enhance import enhance_image
+from night_vision import apply_night_vision
 
-def detect_faces(image_path):
+def detect_faces(image_path, intensity):
+    intensity_threshold = 50
     image = cv2.imread(image_path)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    if intensity < intensity_threshold:
+        image = apply_night_vision(gray)
+
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+    faces = face_cascade.detectMultiScale(image, scaleFactor=1.1, minNeighbors=5, minSize=(50, 50))
 
     if len(faces) > 0:
         for (x, y, w, h) in faces:
