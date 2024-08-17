@@ -26,7 +26,7 @@ while True:
         print("Change in intensity detected!")
         change_detected = True
         frame_counter += 1
-        timestamp = datetime.now().strftime("%M%S")
+        timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
         frame_path_original = f"original/frame_{timestamp}_{frame_counter}.jpg"
         cv2.imwrite(frame_path_original, frame)
         detect_faces(frame_path_original, intensity)
