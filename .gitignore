@@ -1,4 +1,4 @@
-original
-segmented
-enhanced
+original/*
+segmented/*
+enhanced/*
 src/__pycache__
