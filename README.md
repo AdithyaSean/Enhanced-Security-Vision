@@ -57,4 +57,3 @@ This will start the webcam, detect changes in intensity, and process the images 
 ## License
 
 This project is licensed under the MIT License.
-```
