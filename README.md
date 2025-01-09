@@ -4,11 +4,11 @@ Here's the updated README with the complete installation and usage instructions:
 
 # Enhanced Security Vision
 
-Enhanced Security Vision is a Python project that utilizes computer vision techniques to detect changes in intensity and faces in images captured from a network camera throut url. It also enhances the detected faces using various image processing techniques like contrast enhancement and sharpening.
+Enhanced Security Vision is a Python project that utilizes computer vision techniques to detect changes in intensity and faces in images captured from a webcam. It also enhances the detected faces using various image processing techniques like contrast enhancement and sharpening.
 
 ## Features
 
-- Real-time network camera monitoring
+- Real-time webcam monitoring
 - Intensity change detection
 - Face detection and segmentation
 - Image enhancement with night vision capabilities
@@ -18,7 +18,7 @@ Enhanced Security Vision is a Python project that utilizes computer vision techn
 
 Before you begin, ensure you have the following installed:
 - Python 3.8 or higher
-- A stable network connection
+- A working webcam
 - Git (for cloning the repository)
 
 ## Installation
@@ -84,10 +84,10 @@ The program creates the following directories for storing processed images:
 
 ## Troubleshooting
 
-1. If the video stream doesn't capture properly:
-   - Check if the network connection is stable
-   - Verify device permissions
-   - Try reconnecting the video source
+1. If the webcam doesn't start:
+   - Check if another application is using the webcam
+   - Verify webcam permissions
+   - Try reconnecting the webcam
 
 2. If face detection isn't working:
    - Ensure proper lighting conditions
@@ -97,4 +97,3 @@ The program creates the following directories for storing processed images:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
